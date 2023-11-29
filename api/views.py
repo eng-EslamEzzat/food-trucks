@@ -36,6 +36,7 @@ def get_nearest_trucks(*loc, num):
 # it returns 5 trucks by default
 def get_trucks(request, pk=5):
     
+    # get the ip of the requested user
     ip, public = get_client_ip(request)
     
     # use the default public ip address for testing on localhost
